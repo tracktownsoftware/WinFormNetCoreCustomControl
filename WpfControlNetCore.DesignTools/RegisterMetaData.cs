@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.DesignTools.Extensibility;
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
 
@@ -19,6 +20,9 @@ namespace WpfControlNetCore.DesignTools
             get
             {
                 AttributeTableBuilder builder = new AttributeTableBuilder();
+
+                // Show control in toolbox
+                builder.AddCustomAttributes("WpfControlNetCore.ButtonWithDesignTime", new ToolboxBrowsableAttribute(true));
 
                 // Add the menu provider to the design-time metadata.
                 builder.AddCustomAttributes(

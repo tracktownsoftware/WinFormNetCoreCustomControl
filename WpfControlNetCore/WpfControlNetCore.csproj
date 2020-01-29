@@ -9,7 +9,7 @@
     <Product>ChrisH Wpf .Net Core control</Product>
     <Description>Playing with a simple Wpf .Net Core custom control with designer extensibility for VS2019.</Description>
     <Copyright>2020</Copyright>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
