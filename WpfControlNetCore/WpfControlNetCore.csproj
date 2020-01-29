@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <PackageId>ChrisH.WpfControlNetCore</PackageId>
+    <Authors>Chris Hamilton</Authors>
+    <Company>SpreadsheetGear</Company>
+    <Product>ChrisH Wpf .Net Core control</Product>
+    <Description>Playing with a simple Wpf .Net Core custom control with designer extensibility for VS2019.</Description>
+    <Copyright>2020</Copyright>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -12,5 +19,35 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\NetCore\bin\Debug\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Content Include="..\NetCore\bin\Release\netcoreapp3.1\WpfControlNetCore.DesignTools.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+    <Content Include="..\NetCore\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.DesignTools.Extensibility.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+    <Content Include="..\NetCore\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.DesignTools.Interaction.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Content Include="..\NetCore\bin\Debug\netcoreapp3.1\WpfControlNetCore.DesignTools.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+    <Content Include="..\NetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.DesignTools.Extensibility.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+    <Content Include="..\NetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.DesignTools.Interaction.dll">
+      <Pack>true</Pack>
+      <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+  </ItemGroup>
 
 </Project>
