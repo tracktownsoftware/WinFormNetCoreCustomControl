@@ -78,6 +78,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="WpfControlNetFramework.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Tools\VisualStudioToolsManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

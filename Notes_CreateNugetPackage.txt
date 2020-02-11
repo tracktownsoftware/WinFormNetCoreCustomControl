@@ -1,0 +1,4 @@
+https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package
+
+https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools
+

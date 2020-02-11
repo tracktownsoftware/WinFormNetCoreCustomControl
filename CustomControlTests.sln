@@ -17,6 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppNetCore", "WpfAppNetC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{CF92FFB1-8644-46C5-86AD-237E37BB8DFB}"
 	ProjectSection(SolutionItems) = preProject
+		Notes_CreateNugetPackage.txt = Notes_CreateNugetPackage.txt
 		Notes_NetCoreDesignerExtensibility.txt = Notes_NetCoreDesignerExtensibility.txt
 	EndProjectSection
 EndProject

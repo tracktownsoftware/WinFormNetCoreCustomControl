@@ -9,7 +9,7 @@
     <Product>ChrisH Wpf .Net Core control</Product>
     <Description>Playing with a simple Wpf .Net Core custom control with designer extensibility for VS2019.</Description>
     <Copyright>2020</Copyright>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -47,6 +47,13 @@
     <Content Include="..\NetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.DesignTools.Interaction.dll">
       <Pack>true</Pack>
       <PackagePath>\lib\netcoreapp3.1</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include=".\Tools\VisualStudioToolsManifest.xml">
+      <Pack>true</Pack>
+      <PackagePath>\tools</PackagePath>
     </Content>
   </ItemGroup>
 
