@@ -49,7 +49,7 @@ namespace WpfControlNetCore.DesignTools
         private void TriggerAction_Execute(object sender, MenuActionEventArgs e)
         {
             var item = e.Selection.PrimarySelection;
-            item.Properties["DesignTimeTriggerAction"].SetValue("messagebox");
+            item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
         }
 
         private void RedBackground_Execute(object sender, MenuActionEventArgs e)

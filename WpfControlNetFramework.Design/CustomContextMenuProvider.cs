@@ -12,6 +12,7 @@ namespace WpfControlNetFramework.Design
         private MenuAction redBackgroundMenuAction;
         private MenuAction whiteBackgroundMenuAction;
         private MenuAction blueBackgroundMenuAction;
+        private MenuAction triggerActionMenuAction;
 
         public CustomContextMenuProvider()
         {
@@ -28,13 +29,24 @@ namespace WpfControlNetFramework.Design
             blueBackgroundMenuAction.Execute +=
                 new EventHandler<MenuActionEventArgs>(BlueBackground_Execute);
 
+            triggerActionMenuAction = new MenuAction("Show messagebox");
+            triggerActionMenuAction.Execute +=
+                new EventHandler<MenuActionEventArgs>(TriggerAction_Execute);
+
             // Set up the MenuGroup
             MenuGroup myMenuGroup = new MenuGroup("MyMenuGroup", "Custom background");
             myMenuGroup.HasDropDown = false;
+            myMenuGroup.Items.Add(triggerActionMenuAction);
             myMenuGroup.Items.Add(redBackgroundMenuAction);
             myMenuGroup.Items.Add(whiteBackgroundMenuAction);
             myMenuGroup.Items.Add(blueBackgroundMenuAction);
             this.Items.Add(myMenuGroup);
+        }
+
+        private void TriggerAction_Execute(object sender, MenuActionEventArgs e)
+        {
+            var item = e.Selection.PrimarySelection;
+            item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
         }
 
         private void RedBackground_Execute(object sender, MenuActionEventArgs e)

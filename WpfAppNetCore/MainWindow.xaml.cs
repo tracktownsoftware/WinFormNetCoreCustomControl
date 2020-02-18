@@ -25,9 +25,9 @@ namespace WpfAppNetCore
             InitializeComponent();
         }
 
-        private void ButtonWithDesignTime_Click(object sender, RoutedEventArgs e)
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Button click", "Runtime");
+            Button1.DependencyPropertyTrigger = "messagebox";
         }
     }
 }

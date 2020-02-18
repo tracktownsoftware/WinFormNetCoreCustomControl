@@ -17,28 +17,26 @@ namespace WpfControlNetCore
 {
     public class ButtonWithDesignTime : Button
     {
-        public static readonly DependencyProperty DesignTimeTriggerActionProperty = DependencyProperty.Register(
-  "DesignTimeTriggerAction", typeof(string), typeof(ButtonWithDesignTime), new PropertyMetadata(""));
+        public static readonly DependencyProperty DependencyPropertyTriggerProperty = DependencyProperty.Register(
+  "DependencyPropertyTrigger", typeof(string), typeof(ButtonWithDesignTime), new PropertyMetadata(""));
 
         static ButtonWithDesignTime()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(ButtonWithDesignTime), new FrameworkPropertyMetadata(typeof(ButtonWithDesignTime)));
         }
 
-        public string DesignTimeTriggerAction
+        public string DependencyPropertyTrigger
         {
             get 
             {
-                return (string)this.GetValue(DesignTimeTriggerActionProperty);
+                return (string)this.GetValue(DependencyPropertyTriggerProperty);
             }
             set 
             {
+                this.SetValue(DependencyPropertyTriggerProperty, value);
                 if (value == "messagebox")
-                {
-                    this.SetValue(DesignTimeTriggerActionProperty, value);
-                    // Hopefully show Visual Studio design-time UI using .Net Core.
-                    MessageBox.Show(value, "Design-time");
-                }
+                    // Hopefully show Visual Studio design-time UI
+                    MessageBox.Show(value, "DependencyPropertyTrigger");
             }
         }
     }
