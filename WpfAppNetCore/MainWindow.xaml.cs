@@ -24,5 +24,10 @@ namespace WpfAppNetCore
         {
             InitializeComponent();
         }
+
+        private void ButtonWithDesignTime_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Button click", "Runtime");
+        }
     }
 }
