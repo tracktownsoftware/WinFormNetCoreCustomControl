@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonWithDesignTime1 = new WinFormsControlNetFramework.ButtonWithDesignTime();
+            this.MyButton1 = new WinFormsControlNetFramework.MyButton();
             this.SuspendLayout();
             // 
-            // buttonWithDesignTime1
+            // MyButton1
             // 
-            this.buttonWithDesignTime1.Location = new System.Drawing.Point(28, 27);
-            this.buttonWithDesignTime1.Name = "buttonWithDesignTime1";
-            this.buttonWithDesignTime1.Size = new System.Drawing.Size(362, 160);
-            this.buttonWithDesignTime1.TabIndex = 0;
-            this.buttonWithDesignTime1.Text = "buttonWithDesignTime1";
+            this.MyButton1.Location = new System.Drawing.Point(28, 27);
+            this.MyButton1.Name = "MyButton1";
+            this.MyButton1.Size = new System.Drawing.Size(362, 160);
+            this.MyButton1.TabIndex = 0;
+            this.MyButton1.Text = "MyButton1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonWithDesignTime1);
+            this.Controls.Add(this.MyButton1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -53,7 +53,7 @@
 
         #endregion
 
-        private WinFormsControlNetFramework.ButtonWithDesignTime buttonWithDesignTime1;
+        private WinFormsControlNetFramework.MyButton MyButton1;
     }
 }
 

@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonWithDesignTime.cs">
+    <Compile Include="MyButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ButtonWithDesignTime.Designer.cs">
-      <DependentUpon>ButtonWithDesignTime.cs</DependentUpon>
+    <Compile Include="MyButton.Designer.cs">
+      <DependentUpon>MyButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />

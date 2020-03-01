@@ -13,25 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfControlNetCore
+namespace WpfControlNetFramework
 {
-    public class ButtonWithDesignTime : Button
+
+    public class MyButton : Button
     {
         public static readonly DependencyProperty DependencyPropertyTriggerProperty = DependencyProperty.Register(
-  "DependencyPropertyTrigger", typeof(string), typeof(ButtonWithDesignTime), new PropertyMetadata(""));
+"DependencyPropertyTrigger", typeof(string), typeof(MyButton), new PropertyMetadata(""));
 
-        static ButtonWithDesignTime()
+        static MyButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ButtonWithDesignTime), new FrameworkPropertyMetadata(typeof(ButtonWithDesignTime)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(MyButton), new FrameworkPropertyMetadata(typeof(MyButton)));
         }
 
         public string DependencyPropertyTrigger
         {
-            get 
+            get
             {
                 return (string)this.GetValue(DependencyPropertyTriggerProperty);
             }
-            set 
+            set
             {
                 this.SetValue(DependencyPropertyTriggerProperty, value);
                 if (value == "messagebox")
@@ -39,5 +40,6 @@ namespace WpfControlNetCore
                     MessageBox.Show(value, "DependencyPropertyTrigger");
             }
         }
+
     }
 }

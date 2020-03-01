@@ -23,7 +23,7 @@ namespace WpfControlNetFramework.Design
 
                 // Add the menu provider to the design-time metadata.
                 builder.AddCustomAttributes(
-                    typeof(WpfControlNetFramework.ButtonWithDesignTime),
+                    typeof(WpfControlNetFramework.MyButton),
                     new FeatureAttribute(typeof(CustomContextMenuProvider)));
 
                 return builder.CreateTable();

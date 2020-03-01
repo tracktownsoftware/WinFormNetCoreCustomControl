@@ -9,10 +9,10 @@ using WinFormsControlNetFramework;
 
 namespace WinFormsControlNetFramework
 {
-    [Designer("WindowsFormsControlLibrary1.Design.ButtonWithDesignTimeDesigner, WinFormsControlNetFramework")]
-    public class ButtonWithDesignTime : System.Windows.Forms.Button
+    [Designer("WindowsFormsControlLibrary1.Design.MyButtonDesigner, WinFormsControlNetFramework")]
+    public class MyButton : System.Windows.Forms.Button
     {
-        public ButtonWithDesignTime()
+        public MyButton()
         {
         }
     }
@@ -20,7 +20,7 @@ namespace WinFormsControlNetFramework
 
 namespace WindowsFormsControlLibrary1.Design
 {
-    public class ButtonWithDesignTimeDesigner : System.Windows.Forms.Design.ControlDesigner
+    public class MyButtonDesigner : System.Windows.Forms.Design.ControlDesigner
     {
         private DesignerActionListCollection _actionLists;
 
@@ -31,23 +31,23 @@ namespace WindowsFormsControlLibrary1.Design
                 if (null == _actionLists)
                 {
                     _actionLists = new DesignerActionListCollection();
-                    _actionLists.Add(new ButtonWithDesignTimeActionList(this.Component));
+                    _actionLists.Add(new MyButtonActionList(this.Component));
                 }
                 return _actionLists;
             }
         }
 
-        public class ButtonWithDesignTimeActionList : System.ComponentModel.Design.DesignerActionList
+        public class MyButtonActionList : System.ComponentModel.Design.DesignerActionList
         {
-            ButtonWithDesignTime _myButton;
+            MyButton _myButton;
 
             private DesignerActionUIService _designerActionUISvc = null;
 
             //The constructor associates the control with the smart tag list.
-            public ButtonWithDesignTimeActionList(IComponent component)
+            public MyButtonActionList(IComponent component)
                 : base(component)
             {
-                _myButton = component as ButtonWithDesignTime;
+                _myButton = component as MyButton;
 
                 // Cache a reference to DesignerActionUIService, 
                 // so the DesigneractionList can be refreshed.

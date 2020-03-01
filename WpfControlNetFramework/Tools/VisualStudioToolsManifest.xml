@@ -2,7 +2,7 @@
 <FileList>
   <File Reference="WpfControlNetFramework.dll">
     <ToolboxItems BlendCategory="Windows Community Toolkit" VSCategory="ChrisH Wpf ctls NetFramework">
-      <Item Type="WpfControlNetFramework.ButtonWithDesignTime"/>
+      <Item Type="WpfControlNetFramework.MyButton"/>
     </ToolboxItems>
   </File>
 </FileList>

@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace WinFormsControlNetCore
 {
-    public class ButtonWithDesignTime: Button
+    public class MyButton: Button
     {
-        //public ButtonWithDesignTime()
+        //public MyButton()
         //{
         //}
     }

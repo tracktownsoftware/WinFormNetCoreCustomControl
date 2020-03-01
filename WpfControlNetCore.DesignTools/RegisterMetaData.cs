@@ -22,11 +22,11 @@ namespace WpfControlNetCore.DesignTools
                 AttributeTableBuilder builder = new AttributeTableBuilder();
 
                 // Show control in toolbox
-                builder.AddCustomAttributes("WpfControlNetCore.ButtonWithDesignTime", new ToolboxBrowsableAttribute(true));
+                builder.AddCustomAttributes("WpfControlNetCore.MyButton", new ToolboxBrowsableAttribute(true));
 
                 // Add the menu provider to the design-time metadata.
                 builder.AddCustomAttributes(
-                    "WpfControlNetCore.ButtonWithDesignTime",
+                    "WpfControlNetCore.MyButton",
                     new FeatureAttribute(typeof(CustomContextMenuProvider)));
 
                 return builder.CreateTable();
