@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms_NetFramework", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlNetCore.DesignTools", "WpfControlNetCore.DesignTools\WpfControlNetCore.DesignTools.csproj", "{1C9EEDAB-FDAA-4410-BB28-A2A79073504D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControlNetFramework.Design", "WinFormsControlNetFramework.Design\WinFormsControlNetFramework.Design.csproj", "{F5F250AE-8C65-4C94-9834-4B720DFEB751}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{1C9EEDAB-FDAA-4410-BB28-A2A79073504D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C9EEDAB-FDAA-4410-BB28-A2A79073504D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C9EEDAB-FDAA-4410-BB28-A2A79073504D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F250AE-8C65-4C94-9834-4B720DFEB751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F250AE-8C65-4C94-9834-4B720DFEB751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F250AE-8C65-4C94-9834-4B720DFEB751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F250AE-8C65-4C94-9834-4B720DFEB751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{8E83A303-61BF-4080-A48F-13B7585AE8F9} = {6B9DFAAC-A951-40FE-B824-3882BBC91F5C}
 		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
 		{1C9EEDAB-FDAA-4410-BB28-A2A79073504D} = {5E8DB042-00B9-4F8E-87DD-9BE88FCAD36B}
+		{F5F250AE-8C65-4C94-9834-4B720DFEB751} = {5A37964D-9E5F-4BE4-9B13-95CAB7385CD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {218098CA-01C6-4853-9012-C6D47BB23F26}
