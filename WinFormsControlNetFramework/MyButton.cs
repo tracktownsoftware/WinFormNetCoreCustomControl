@@ -9,95 +9,11 @@ using WinFormsControlNetFramework;
 
 namespace WinFormsControlNetFramework
 {
-    [Designer("WindowsFormsControlLibrary1.Design.MyButtonDesigner, WinFormsControlNetFramework")]
+    [Designer("WinFormsControlNetFramework.Design.MyButtonDesigner, WinFormsControlNetFramework.Design.dll")]
     public class MyButton : System.Windows.Forms.Button
     {
         public MyButton()
         {
-        }
-    }
-}
-
-namespace WindowsFormsControlLibrary1.Design
-{
-    public class MyButtonDesigner : System.Windows.Forms.Design.ControlDesigner
-    {
-        private DesignerActionListCollection _actionLists;
-
-        public override DesignerActionListCollection ActionLists
-        {
-            get
-            {
-                if (null == _actionLists)
-                {
-                    _actionLists = new DesignerActionListCollection();
-                    _actionLists.Add(new MyButtonActionList(this.Component));
-                }
-                return _actionLists;
-            }
-        }
-
-        public class MyButtonActionList : System.ComponentModel.Design.DesignerActionList
-        {
-            MyButton _myButton;
-
-            private DesignerActionUIService _designerActionUISvc = null;
-
-            //The constructor associates the control with the smart tag list.
-            public MyButtonActionList(IComponent component)
-                : base(component)
-            {
-                _myButton = component as MyButton;
-
-                // Cache a reference to DesignerActionUIService, 
-                // so the DesigneractionList can be refreshed.
-                _designerActionUISvc = GetService(typeof(DesignerActionUIService))
-            as DesignerActionUIService;
-            }
-
-
-            public override DesignerActionItemCollection GetSortedActionItems()
-            {
-                DesignerActionItemCollection items = new DesignerActionItemCollection();
-                items.Add(new DesignerActionMethodItem(
-                    this,
-                    "SetBackgroundRed",
-                    "Red Background",
-                    "BackgroundColor",
-                    "",
-                    true));
-                items.Add(new DesignerActionMethodItem(
-                    this,
-                    "SetBackgroundWhite",
-                    "White Background",
-                    "BackgroundColor",
-                    "",
-                    true));
-                items.Add(new DesignerActionMethodItem(
-                    this,
-                    "SetBackgroundBlue",
-                    "Blue Background",
-                    "BackgroundColor",
-                    "",
-                    true));
-                return items;
-            }
-
-            public void SetBackgroundRed()
-            {
-                _myButton.BackColor = System.Drawing.Color.Red;
-            }
-
-            public void SetBackgroundWhite()
-            {
-                _myButton.BackColor = System.Drawing.Color.White;
-            }
-
-            public void SetBackgroundBlue()
-            {
-
-                _myButton.BackColor = System.Drawing.Color.Green;
-            }
         }
     }
 }

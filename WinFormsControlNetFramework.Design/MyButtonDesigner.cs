@@ -8,7 +8,7 @@ using System.ComponentModel.Design;
 
 namespace WinFormsControlNetFramework.Design
 {
-    public class ButtonWithDesignTimeDesigner : System.Windows.Forms.Design.ControlDesigner
+    public class MyButtonDesigner : System.Windows.Forms.Design.ControlDesigner
     {
         private DesignerActionListCollection _actionLists;
 
@@ -19,20 +19,20 @@ namespace WinFormsControlNetFramework.Design
                 if (null == _actionLists)
                 {
                     _actionLists = new DesignerActionListCollection();
-                    _actionLists.Add(new ButtonWithDesignTimeActionList(this.Component));
+                    _actionLists.Add(new MyButtonActionList(this.Component));
                 }
                 return _actionLists;
             }
         }
 
-        public class ButtonWithDesignTimeActionList : System.ComponentModel.Design.DesignerActionList
+        public class MyButtonActionList : System.ComponentModel.Design.DesignerActionList
         {
             MyButton _myButton;
 
             private DesignerActionUIService _designerActionUISvc = null;
 
             //The constructor associates the control with the smart tag list.
-            public ButtonWithDesignTimeActionList(IComponent component)
+            public MyButtonActionList(IComponent component)
                 : base(component)
             {
                 _myButton = component as MyButton;

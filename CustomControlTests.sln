@@ -39,6 +39,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlNetCore.DesignToo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControlNetFramework.Design", "WinFormsControlNetFramework.Design\WinFormsControlNetFramework.Design.csproj", "{F5F250AE-8C65-4C94-9834-4B720DFEB751}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{ECB5E584-A101-40EB-B55A-9FFACBF2AD01}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\nuget.exe = Libs\nuget.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
