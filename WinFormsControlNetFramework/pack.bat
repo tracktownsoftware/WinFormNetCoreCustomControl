@@ -1,1 +1,0 @@
-..\libs\nuget.exe pack WinformsControlNetFramework.nuspec
