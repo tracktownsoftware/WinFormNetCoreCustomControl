@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>ChrisH.WpfControlNetFramework</id>
-    <version>1.0.3</version>
+    <id>ChrisH.WpfControl.NetFramework</id>
+    <version>1.0.7</version>
     <title>$title$</title>
     <authors>Chris Hamilton</authors>
     <owners>$author$</owners>
@@ -15,20 +15,10 @@
     <dependencies>
       <group targetFramework=".NETFramework4.7.2" />
     </dependencies>
-    <!--<frameworkAssemblies>
-      <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System.Design" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System.Drawing" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System.Net" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="System.Xaml" targetFramework=".NETFramework4.7.2" />
-      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.7.2" />
-    </frameworkAssemblies>-->
   </metadata>
   <files>
     <file src=".\Tools\VisualStudioToolsManifest.xml" target="tools" />
+    <file src="..\NetFramework\bin\Release\WpfControlNetFramework.dll" target="lib\net472" />
     <file src="..\NetFramework\bin\Release\WpfControlNetFramework.Design.dll" target="lib\net472" />
     <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Extensibility.dll" target="lib\net472" />
     <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Interaction.dll" target="lib\net472" />

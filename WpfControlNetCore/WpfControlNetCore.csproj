@@ -9,11 +9,12 @@
     <Product>ChrisH Wpf .Net Core control</Product>
     <Description>Playing with a simple Wpf .Net Core custom control with designer extensibility for VS2019.</Description>
     <Copyright>2020</Copyright>
-    <Version>1.0.3</Version>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\NetCore\bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

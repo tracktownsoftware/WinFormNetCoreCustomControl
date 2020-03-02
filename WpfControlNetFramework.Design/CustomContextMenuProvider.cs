@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Microsoft.Windows.Design.Interaction;
 
 namespace WpfControlNetFramework.Design
@@ -46,7 +47,8 @@ namespace WpfControlNetFramework.Design
         private void TriggerAction_Execute(object sender, MenuActionEventArgs e)
         {
             var item = e.Selection.PrimarySelection;
-            item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
+            MessageBox.Show("Show messagebox");
+            //item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
         }
 
         private void RedBackground_Execute(object sender, MenuActionEventArgs e)
