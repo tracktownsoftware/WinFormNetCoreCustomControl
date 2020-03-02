@@ -2,13 +2,16 @@
 <package >
   <metadata>
     <id>ChrisH.WinFormsControl.NetFramework</id>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
     <title>WinForms control for .Net Framework</title>
     <authors>ChrisH</authors>
     <owners>ChrisH</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>My test WinForms control for >Net Framework</description>
     <copyright>Copyright 2020</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2" />
+    </dependencies>
     <references>
       <reference file="WinFormsControlNetFramework.dll" />
       <reference file="WinFormsControlNetFramework.design.dll" />
@@ -17,5 +20,7 @@
   <files>
     <file src="..\NetFramework\bin\Release\WinFormsControlNetFramework.dll" target="lib\net472\WinFormsControlNetFramework.dll" />
     <file src="..\NetFramework\bin\Release\WinFormsControlNetFramework.design.dll" target="lib\net472\WinFormsControlNetFramework.design.dll" />
+    <file src="..\NetFramework\bin\Release\WinFormsControlNetFramework.dll" target="ref\net472\WinFormsControlNetFramework.dll" />
+    <file src="..\NetFramework\bin\Release\WinFormsControlNetFramework.design.dll" target="ref\net472\WinFormsControlNetFramework.design.dll" />
   </files>
 </package>
