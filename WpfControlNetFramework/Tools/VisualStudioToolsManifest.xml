@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <FileList>
   <File Reference="WpfControlNetFramework.dll">
-    <ToolboxItems BlendCategory="Windows Community Toolkit" VSCategory="ChrisH Wpf ctls NetFramework">
+    <ToolboxItems BlendCategory="ChrisH Wpf ctls NetFramework" VSCategory="ChrisH Wpf ctls NetFramework">
       <Item Type="WpfControlNetFramework.MyButton"/>
     </ToolboxItems>
   </File>

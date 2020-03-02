@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ChrisH.WpfControl.NetFramework</id>
-    <version>1.0.7</version>
+    <version>1.0.15</version>
     <title>$title$</title>
     <authors>Chris Hamilton</authors>
     <owners>$author$</owners>
@@ -19,8 +19,8 @@
   <files>
     <file src=".\Tools\VisualStudioToolsManifest.xml" target="tools" />
     <file src="..\NetFramework\bin\Release\WpfControlNetFramework.dll" target="lib\net472" />
-    <file src="..\NetFramework\bin\Release\WpfControlNetFramework.Design.dll" target="lib\net472" />
-    <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Extensibility.dll" target="lib\net472" />
-    <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Interaction.dll" target="lib\net472" />
+    <file src="..\NetFramework\bin\Release\WpfControlNetFramework.Design.dll" target="lib\net472\design" />
+    <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Extensibility.dll" target="lib\net472\design" />
+    <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Interaction.dll" target="lib\net472\design" />
   </files>
 </package>
