@@ -48,6 +48,13 @@ namespace WinFormsControlNetFramework.Design
                 DesignerActionItemCollection items = new DesignerActionItemCollection();
                 items.Add(new DesignerActionMethodItem(
                     this,
+                    "ShowMessageBox",
+                    "Show MessageBox",
+                    "Trigger",
+                    "",
+                    true));
+                items.Add(new DesignerActionMethodItem(
+                    this,
                     "SetBackgroundRed",
                     "Red Background",
                     "BackgroundColor",
@@ -70,6 +77,11 @@ namespace WinFormsControlNetFramework.Design
                 return items;
             }
 
+            public void ShowMessageBox()
+            {
+                System.Windows.Forms.MessageBox.Show("Hello World from WinForms .Net Framework", "Show MessageBox"); ;
+            }
+
             public void SetBackgroundRed()
             {
                 _myButton.BackColor = System.Drawing.Color.Red;
@@ -83,7 +95,7 @@ namespace WinFormsControlNetFramework.Design
             public void SetBackgroundBlue()
             {
 
-                _myButton.BackColor = System.Drawing.Color.Green;
+                _myButton.BackColor = System.Drawing.Color.Blue;
             }
         }
     }

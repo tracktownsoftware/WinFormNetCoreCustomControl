@@ -1,4 +1,4 @@
-set PACKAGEVERSION=1.1.1
+set PACKAGEVERSION=1.2.1
 call packWinformNetCore >packAll.new
 call packWinformNetFramework >>packAll.new
 call packWpfNetCore >>packAll.new
