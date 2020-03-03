@@ -6,11 +6,11 @@ using System.ComponentModel;
 
 namespace WinFormsControlNetCore
 {
-    [Designer("WinFormsControlNetCore.MyButtonDesigner, WinFormsControlNetCore.Design.dll")]
+    [Designer("WinFormsControlNetCore.Design.MyButtonDesigner, WinFormsControlNetCore.Design.dll")]
     public class MyButton: Button
     {
-        //public MyButton()
-        //{
-        //}
+        public MyButton()
+        {
+        }
     }
 }
