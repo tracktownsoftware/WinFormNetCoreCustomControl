@@ -7,7 +7,7 @@ To create packages:
 
 Notes on the \CustomControlTests\Pack\pack*.bat files:
 - For .Net Core SDK projects the csproj file contains package information and "dotnet pack" is used.
-- For .Net Framework projects a nuspec file is in the project folder that contains package information and "nuget.exe pack" is used.
+- For .Net Framework projects a nuspec file is in the project folder and "nuget.exe pack" is used.
 
 
 Useful links:
