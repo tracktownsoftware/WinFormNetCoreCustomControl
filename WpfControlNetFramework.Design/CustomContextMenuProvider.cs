@@ -47,8 +47,8 @@ namespace WpfControlNetFramework.Design
         private void TriggerAction_Execute(object sender, MenuActionEventArgs e)
         {
             var item = e.Selection.PrimarySelection;
-            MessageBox.Show("Hello World from WPF .Net Framework","Show MessageBox");
-            //item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
+            //MessageBox.Show("Hello World from WPF .Net Framework","Show MessageBox");
+            item.Properties["DependencyPropertyTrigger"].SetValue("messagebox");
         }
 
         private void RedBackground_Execute(object sender, MenuActionEventArgs e)
