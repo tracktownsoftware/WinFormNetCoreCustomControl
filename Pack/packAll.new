@@ -3,7 +3,7 @@ C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\Winfo
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/13/2020 9:57:35 AM.
+Build started 4/16/2020 10:46:01 AM.
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinformsControlNetCore.Design\WinFormsControlNetCore.Design.csproj" on node 1 (default targets).
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
@@ -17,23 +17,23 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.31
+Time Elapsed 00:00:00.21
 
-C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>dotnet pack -p:PackageVersion=1.2.8 ..\WinformsControlNetCore\WinFormsControlNetCore.csproj --configuration=Release --output Packages 
+C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>dotnet pack -p:PackageVersion=1.2.13 ..\WinformsControlNetCore\WinFormsControlNetCore.csproj --configuration=Release --output Packages 
 Microsoft (R) Build Engine version 16.6.0-preview-20162-03+00781ad13 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Determining projects to restore...
-  Restore completed in 209.66 ms for C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinformsControlNetCore\WinFormsControlNetCore.csproj.
+  Restore completed in 157.52 ms for C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinformsControlNetCore\WinFormsControlNetCore.csproj.
   You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
   WinFormsControlNetCore -> C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetCore\bin\Release\netcoreapp3.1\WinFormsControlNetCore.dll
-  Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WinFormsControl.NetCore.1.2.8.nupkg'.
+  Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WinFormsControl.NetCore.1.2.13.nupkg'.
 
 C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\WinFormsControlNetFramework.Design\WinFormsControlNetFramework.Design.csproj -p:Configuration=Release  
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/13/2020 9:57:38 AM.
+Build started 4/16/2020 10:46:03 AM.
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinFormsControlNetFramework.Design\WinFormsControlNetFramework.Design.csproj" on node 1 (default targets).
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinFormsControlNetFramework.Design\WinFormsControlNetFramework.Design.csproj" (1) is building "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WinFormsControlNetFramework\WinFormsControlNetFramework.csproj" (2:2) on node 1 (default targets).
 GenerateTargetFrameworkMonikerAttribute:
@@ -57,7 +57,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.49
+Time Elapsed 00:00:00.38
 
 C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\WinFormsControlNetFramework\WinFormsControlNetFramework.Design.csproj -p:Configuration=Release  
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
@@ -66,50 +66,51 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 MSBUILD : error MSB1009: Project file does not exist.
 Switch: ..\WinFormsControlNetFramework\WinFormsControlNetFramework.Design.csproj
 
-C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>..\libs\nuget.exe pack ..\WinformsControlNetFramework\WinformsControlNetFramework.nuspec -Version 1.2.8 -OutputDirectory Packages 
+C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>..\libs\nuget.exe pack ..\WinformsControlNetFramework\WinformsControlNetFramework.nuspec -Version 1.2.13 -OutputDirectory Packages 
 Attempting to build package from 'WinformsControlNetFramework.nuspec'.
-Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WinFormsControl.NetFramework.1.2.8.nupkg'.
+Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WinFormsControl.NetFramework.1.2.13.nupkg'.
+WARNING: NU5131: References were found in the nuspec, but some reference assemblies were not found in both the nuspec and ref folder. Add the following reference assemblies:
+- Add WinFormsControlNetFramework.dll to the ref/any/ directory
+- Add WinFormsControlNetFramework.design.dll to the ref/any/ directory
+
 
 C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\WPFControlNetCore.DesignTools\WPFControlNetCore.DesignTools.csproj -p:Configuration=Release  
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/13/2020 9:57:40 AM.
+Build started 4/16/2020 10:46:04 AM.
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore.DesignTools\WPFControlNetCore.DesignTools.csproj" on node 1 (default targets).
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CoreCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:C:\Users\chris.000\.nuget\packages\microsoft.visualstudio.designtools.extensibility\16.4.29519.181\lib\net45\Microsoft.VisualStudio.DesignTools.Extensibility.dll /reference:C:\Users\chris.000\.nuget\packages\microsoft.visualstudio.designtools.extensibility\16.4.29519.181\lib\net45\Microsoft.VisualStudio.DesignTools.Interaction.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\WpfControlNetCore.DesignTools.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output /deterministic+ /langversion:7.3 CustomContextMenuProvider.cs RegisterMetaData.cs Properties\AssemblyInfo.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
-  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\Roslyn
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
 _CopyFilesMarkedCopyLocal:
   Touching "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore.DesignTools\obj\Release\WPFControlNetCore.DesignTools.csproj.CopyComplete".
 CopyFilesToOutputDirectory:
-  Copying file from "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore.DesignTools\obj\Release\WpfControlNetCore.DesignTools.dll" to "C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetCore\bin\Release\netcoreapp3.1\WpfControlNetCore.DesignTools.dll".
   WPFControlNetCore.DesignTools -> C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetCore\bin\Release\netcoreapp3.1\WpfControlNetCore.DesignTools.dll
-  Copying file from "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore.DesignTools\obj\Release\WpfControlNetCore.DesignTools.pdb" to "C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetCore\bin\Release\netcoreapp3.1\WpfControlNetCore.DesignTools.pdb".
 Done Building Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore.DesignTools\WPFControlNetCore.DesignTools.csproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:00.27
 
-C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>dotnet pack -p:PackageVersion=1.2.8 ..\WPFControlNetCore\WPFControlNetCore.csproj --configuration=Release --output Packages 
+C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>dotnet pack -p:PackageVersion=1.2.13 ..\WPFControlNetCore\WPFControlNetCore.csproj --configuration=Release --output Packages 
 Microsoft (R) Build Engine version 16.6.0-preview-20162-03+00781ad13 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Determining projects to restore...
-  Restore completed in 178.24 ms for C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore\WPFControlNetCore.csproj.
+  Restore completed in 154.92 ms for C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetCore\WPFControlNetCore.csproj.
   You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
   WPFControlNetCore -> C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetCore\bin\Release\netcoreapp3.1\WPFControlNetCore.dll
-  Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WpfControl.NetCore.1.2.8.nupkg'.
+  Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WpfControl.NetCore.1.2.13.nupkg'.
 
 C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\WPFControlNetFramework.Design\WPFControlNetFramework.Design.csproj -p:Configuration=Release  
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/13/2020 9:57:46 AM.
+Build started 4/16/2020 10:46:08 AM.
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\WPFControlNetFramework.Design.csproj" on node 1 (default targets).
 Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\WPFControlNetFramework.Design.csproj" (1) is building "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WpfControlNetFramework\WpfControlNetFramework.csproj" (2:2) on node 1 (default targets).
 MainResourcesGeneration:
@@ -126,21 +127,18 @@ Done Building Project "C:\Users\chris.000\source\repos\CustomControlDesignerTest
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CoreCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\IDE\PublicAssemblies\Microsoft.Windows.Design.Extensibility.dll" /reference:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\IDE\PublicAssemblies\Microsoft.Windows.Design.Interaction.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xaml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.dll" /reference:C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetFramework\bin\Release\WpfControlNetFramework.dll /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\WpfControlNetFramework.Design.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output /deterministic+ /langversion:7.3 CustomContextMenuProvider.cs RegisterMetaData.cs Properties\AssemblyInfo.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
-  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\Roslyn
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
 _CopyFilesMarkedCopyLocal:
   Touching "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\obj\Release\WPFControlNetFramework.Design.csproj.CopyComplete".
 CopyFilesToOutputDirectory:
-  Copying file from "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\obj\Release\WpfControlNetFramework.Design.dll" to "C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetFramework\bin\Release\WpfControlNetFramework.Design.dll".
   WPFControlNetFramework.Design -> C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetFramework\bin\Release\WpfControlNetFramework.Design.dll
-  Copying file from "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\obj\Release\WpfControlNetFramework.Design.pdb" to "C:\Users\chris.000\source\repos\CustomControlDesignerTests\NetFramework\bin\Release\WpfControlNetFramework.Design.pdb".
 Done Building Project "C:\Users\chris.000\source\repos\CustomControlDesignerTests\WPFControlNetFramework.Design\WPFControlNetFramework.Design.csproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.66
+Time Elapsed 00:00:00.46
 
 C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>msbuild ..\WPFControlNetFramework\WPFControlNetFramework.Design.csproj -p:Configuration=Release  
 Microsoft (R) Build Engine version 16.6.0-preview-20168-04+3453beee0 for .NET Framework
@@ -149,7 +147,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 MSBUILD : error MSB1009: Project file does not exist.
 Switch: ..\WPFControlNetFramework\WPFControlNetFramework.Design.csproj
 
-C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>..\libs\nuget.exe pack ..\WpfControlNetFramework\WpfControlNetFramework.nuspec -Version 1.2.8 -OutputDirectory Packages 
+C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack>..\libs\nuget.exe pack ..\WpfControlNetFramework\WpfControlNetFramework.nuspec -Version 1.2.13 -OutputDirectory Packages 
 Attempting to build package from 'WpfControlNetFramework.nuspec'.
-Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WpfControl.NetFramework.1.2.8.nupkg'.
+Successfully created package 'C:\Users\chris.000\source\repos\CustomControlDesignerTests\Pack\Packages\ChrisH.WpfControl.NetFramework.1.2.13.nupkg'.
 Done 
