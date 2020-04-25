@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,9 +35,40 @@ namespace WpfControlNetCore
             set 
             {
                 this.SetValue(DependencyPropertyTriggerProperty, value);
-                if (value == "messagebox")
-                    // Hopefully show Visual Studio design-time UI
-                    MessageBox.Show(value, "DependencyPropertyTrigger");
+                if (value == "ShowNetCoreUI")
+                {
+                    // FAILS - Attempt #1
+                    //var netCoreWPFWindow = new NetCoreWPFWindow();
+                    //Application app = new Application();
+                    //app.Run(netCoreWPFWindow);
+                    //this.Content = netCoreWPFWindow.MyButtonText;
+
+                    // FAILS - Attempt #2
+                    // Nothing shows at design-time
+                    //ProcessStartInfo start = new ProcessStartInfo();
+                    //start.UseShellExecute = false;
+                    //start.CreateNoWindow = false;
+                    //string exeFile = System.Reflection.Assembly.GetAssembly(this.GetType()).Location;
+                    //exeFile = new System.IO.DirectoryInfo(exeFile).Parent.FullName + @"\Design\WPFControlNetCore.ConsoleApp.exe";
+                    //start.FileName = exeFile;
+
+                    //start.EnvironmentVariables["MyButtonText"] = this.Content as string;
+                    //start.RedirectStandardOutput = true; // set to true to read console app StandardOutput below
+
+                    //using (Process process = Process.Start(start))
+                    //{
+                    //    // Read resulting text from the NetCore console app process with the StreamReader
+                    //    using (System.IO.StreamReader reader = process.StandardOutput)
+                    //    {
+                    //        string result = reader.ReadToEnd().TrimEnd('\r', '\n');
+                    //    }
+                    //}
+
+                    // Attempt #3 - Just try to launch browser window
+                    string url = @"https://www.cnn.com";
+                    //Process.Start(url); This doesn't work in .Net Core
+                    Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+                }
             }
         }
     }
