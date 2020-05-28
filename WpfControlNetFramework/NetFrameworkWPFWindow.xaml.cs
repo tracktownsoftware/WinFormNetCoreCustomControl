@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfControlNetCore
+namespace WpfControlNetFramework
 {
     /// <summary>
-    /// Interaction logic for NetCoreWPFWindow.xaml
+    /// Interaction logic for NetFrameworkWPFWindow.xaml
     /// </summary>
-    public partial class NetCoreWPFWindow : Window
+    public partial class NetFrameworkWPFWindow : Window
     {
-        public NetCoreWPFWindow()
+        public NetFrameworkWPFWindow()
         {
             InitializeComponent();
             this.buttonCancel.Click += ButtonCancel_Click;
