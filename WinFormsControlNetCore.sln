@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{CF92FFB1-8644-46C5-86AD-237E37BB8DFB}"
+	ProjectSection(SolutionItems) = preProject
+		Notes_BuildPackages.txt = Notes_BuildPackages.txt
+		Notes_NetCoreDesignerExtensibility.txt = Notes_NetCoreDesignerExtensibility.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsControlNetCore", "WinFormsControlNetCore\WinFormsControlNetCore.csproj", "{8E83A303-61BF-4080-A48F-13B7585AE8F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms_NetCore", "WinForms_NetCore", "{6B9DFAAC-A951-40FE-B824-3882BBC91F5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{ECB5E584-A101-40EB-B55A-9FFACBF2AD01}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\nuget.exe = Libs\nuget.exe
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControlNetCore.Design", "WinFormsControlNetCore.Design\WinFormsControlNetCore.Design.csproj", "{91F81211-F68D-4ECB-BF5C-ED003642A702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pack", "Pack", "{4A4AF241-B17A-4991-956B-8CB962D4830C}"
+	ProjectSection(SolutionItems) = preProject
+		Pack\packAll.bat = Pack\packAll.bat
+		Pack\packWinformNetCore.bat = Pack\packWinformNetCore.bat
+		Pack\packWinformNetFramework.bat = Pack\packWinformNetFramework.bat
+		Pack\packWpfNetCore.bat = Pack\packWpfNetCore.bat
+		Pack\packWpfNetFramework.bat = Pack\packWpfNetFramework.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E83A303-61BF-4080-A48F-13B7585AE8F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E83A303-61BF-4080-A48F-13B7585AE8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E83A303-61BF-4080-A48F-13B7585AE8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E83A303-61BF-4080-A48F-13B7585AE8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F81211-F68D-4ECB-BF5C-ED003642A702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F81211-F68D-4ECB-BF5C-ED003642A702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F81211-F68D-4ECB-BF5C-ED003642A702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F81211-F68D-4ECB-BF5C-ED003642A702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E83A303-61BF-4080-A48F-13B7585AE8F9} = {6B9DFAAC-A951-40FE-B824-3882BBC91F5C}
+		{91F81211-F68D-4ECB-BF5C-ED003642A702} = {6B9DFAAC-A951-40FE-B824-3882BBC91F5C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {218098CA-01C6-4853-9012-C6D47BB23F26}
+	EndGlobalSection
+EndGlobal
