@@ -10,28 +10,43 @@
     <Product>ChrisH.WinFormsControl.NetCore</Product>
     <Description>Playing with a simple WinForms .Net Core custom control with designer extensibility for VS2019.</Description>
     <Copyright>2020</Copyright>
+    <Configurations>Debug;Release;ReleaseDesign;ReleaseDesignTools</Configurations>
   </PropertyGroup>
-
+  
+  <!--Release configuration has no designer extensibility. 
+  Able to drop NetCore winform control onto surface in WinFormsNetCoreTestApp.-->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\NetCore\bin\Release\</OutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
-
+  
+  <!--Debug configuration has no designer extensibility-->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\NetCore\bin\Debug\</OutputPath>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  <!--ReleaseDesignTools configuration. Playing with new NetCore XAML designer extensibility model. Not likely to work 
+  in NetCore winforms but tried anyway.-->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDesignTools|AnyCPU'">
+    <OutputPath>..\NetCore\bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>TRACE;RELEASEDESIGNTOOLS</DefineConstants>
+  </PropertyGroup>
+
+  <!--ReleaseDesign configuration. Playing with old NetFramework Design approach. Not likely to work in NetCore winforms but tried anyway.-->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDesign|AnyCPU'">
+    <DefineConstants>TRACE;RELEASEDESIGN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDesign|AnyCPU'">
     <Content Include="..\NetCore\bin\Release\netcoreapp3.1\WinFormsControlNetCore.Design.dll">
       <Pack>true</Pack>
       <PackagePath>\lib\netcoreapp3.1</PackagePath>
     </Content>
   </ItemGroup>
-  
-  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <Content Include="..\NetCore\bin\Debug\netcoreapp3.1\WinFormsControlNetCore.Design.dll">
-      <Pack>true</Pack>
-      <PackagePath>\lib\netcoreapp3.1</PackagePath>
-    </Content>
-  </ItemGroup>
+
+  <!--Delete bin Design folder before every build-->
+  <Target Name="PreBuild" AfterTargets="PreBuildEvent">
+     <RemoveDir Directories="$(TargetDir)Design" />
+  </Target>
 </Project>

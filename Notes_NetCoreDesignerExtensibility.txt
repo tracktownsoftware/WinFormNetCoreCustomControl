@@ -1,8 +1,7 @@
 I found the following links that explain UWP and WPF .Net Core designer extensibility. It's similar 
 to the old approach but with minor changes, including the use of a new "DesignTools" suffix.
 
-
-** .Net Core XAML Designer Extensibility **
+** .Net Core XAML Designer Extensibility (not for .Net Core WinForms) **
 The link below explains the new "surface isolation architecture" for .Net Core designer extensibility
 for adding designer extensibility to UWP and WPF controls that target .Net Core.
 The new architecture uses a .designtools.dll file extension (rather than the old .design.dll file extension).
